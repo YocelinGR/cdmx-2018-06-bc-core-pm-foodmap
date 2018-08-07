@@ -5,17 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Buscador de lugares para comer, encuentra restaurantes cerca de ti.">
     <meta name="keywords" content="Geolocalizador, comida, restaurantes, hambre, platillos">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Dosis|Kalam|Lobster|Modern+Antiqua|Pacifico|Permanent+Marker|Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
       crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
-      crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css" />
     <title>Glotones somos | Y en el camino andamos</title>
+    <!-- Quita atribucion de derechos de los mapas-->
+    <style media="screen">
+      .leaflet-control-attribution{
+        display: none;
+      }
+    </style>
   </head>
   <body>
-    <button type="button" name="button" id = "findUser">Localizar</button>
-    <div id="mapLocations"></div>
-    <script src="js/app.js"></script>
+    <div id="mapaSpace" style="width: 600px; height: 400px; float: left;"></div>
+    <div>
+      <section>
+        <h2>Filtros</h2>
+        <h4>Evaluación</h4>
+        <select id="select-rate" onchange="showRate()">
+          <option value="bueno">Bueno</option>
+          <option value="excelente">Excelente</option>
+        </select>
+      </section>
+      <h4>Precio:</h4>
+      <select id = "select-price" onchange="showPrice()">
+        <option value="cien">Menor o igual a $100</option>
+        <option value="doscientos">Entre $200 y $400</option>
+        <option value="cuatrocientos">Mayor a $400</option>
+      </select>
+      <h4>Tipo</h4>
+      <select id="select-type" onchange="showType()">
+        <option value="mexicana">Mexicana</option>
+        <option value="otro">Otros</option>
+      </select>
+    </section>
+    <button type="button" name="button" onclick="filter()">Filtrar</button>
+    </div>
+<!--Zona de scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+      <script type="text/javascript" src="node_modules/leaflet.markercluster/dist/leaflet.markercluster-src.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+      <script type="text/javascript" src="js/firebaseCredentials.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
