@@ -83,10 +83,10 @@ const obtainingPosition = (position) =>{
   let  userMarker = L.marker([lat, lng]);
   userMarker.bindPopup('<p>Tu estas aquí</p><p>Latitud:'+lat+'</p><p>Longitud:'+lng+'</p>');
 	userMarker.addTo(creatingMap);
-  /*DB.collection('places').onSnapshot((querySnapshot) => { // onStapshot va a vigilar cuando haga cambios y si hay un cambio entra y te dice que fue lo que cambió
+  DB.collection('places').onSnapshot((querySnapshot) => { // onStapshot va a vigilar cuando haga cambios y si hay un cambio entra y te dice que fue lo que cambió
     querySnapshot.forEach((doc) => {
-      //console.log(`${doc.id} => ${Object.values(doc.data().location)}`);
+      console.log(`${doc.id} => ${Object.values(doc.data().location)}`);
     });
-  });*/
+  });
 }
 getUserLocation();
