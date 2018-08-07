@@ -5,13 +5,13 @@ let markers = new Array();
 let markersAux = new Array();
 let markersBackup = new Array();
 // Obtener ubicacion del usuario para iniciar el mapa ahí
-/*const getUserLocation = () =>{
+const getUserLocation = () =>{
   if(navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(obtainingPosition);
   } else {
     console.log('No es posible usar geolocalizacion en tu browser');
   }
-}*/
+}
 const showRate = () => {
   let rateID = document.getElementById('select-rate').value;
   return rateID;
@@ -67,9 +67,9 @@ const filter = () => {
     console.log(placesRef.where("price", "==", "$400 a $600 ").where("rate", "==", "Excelente"));
   }
 }
-const obtainingPosition = () =>{
-  let lat = 19.4046509;
-  let lng = -99.16404949999999;
+const obtainingPosition = (position) =>{
+  let lat = position.coords.latitude;
+  let lng = position.coords.longitude;
   console.log(lat, lng);
   let creatingMap = L.map('mapaSpace').setView([lat, lng], 14);
 	let osmUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
@@ -89,4 +89,4 @@ const obtainingPosition = () =>{
     });
   });
 }
-obtainingPosition();
+getUserLocation();
