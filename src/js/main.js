@@ -31,7 +31,18 @@ const filter = () => {
   let placesRef = DB.collection("places");
 //  citiesRef.where("state", "==", "CA").where("population", "<", 1000000)
   if ( rate == 'bueno' && (price == 'cien' && type == 'mexicana')){
-    console.log(placesRef.where("price", "==", "$100 a $200 ").where("type", "==", "Mexicana ").where("rate", "==", "Bueno"));
+    DB.collection("places").where("price", "==", "$100 a $200 ").where("type", "==", "Mexicana ").where("rate", "==", "Bueno")
+    .get()
+    .then(function(querySnapshot) {
+        querySnapshot.forEach(function(doc) {
+            // doc.data() is never undefined for query doc snapshots
+            console.log(doc.id, " => ", doc.data());
+        });
+    })
+    .catch(function(error) {
+        console.log("Error getting documents: ", error);
+    });
+
   }
   if ( rate == 'bueno' && (price == 'cien' && type == 'otro')){
     console.log(placesRef.where("price", "==", "$100 a $200 ").where("rate", "==", "Bueno"));
@@ -83,10 +94,10 @@ const obtainingPosition = (position) =>{
   let  userMarker = L.marker([lat, lng]);
   userMarker.bindPopup('<p>Tu estas aquí</p><p>Latitud:'+lat+'</p><p>Longitud:'+lng+'</p>');
 	userMarker.addTo(creatingMap);
-  DB.collection('places').onSnapshot((querySnapshot) => { // onStapshot va a vigilar cuando haga cambios y si hay un cambio entra y te dice que fue lo que cambió
+  /*DB.collection('places').onSnapshot((querySnapshot) => { // onStapshot va a vigilar cuando haga cambios y si hay un cambio entra y te dice que fue lo que cambió
     querySnapshot.forEach((doc) => {
       console.log(`${doc.id} => ${Object.values(doc.data().location)}`);
     });
-  });
+  });*/filter();
 }
 getUserLocation();

@@ -1,12 +1,12 @@
 // Inicializar Firebase. Información sobre permisos y dominios del proyecto
 const initiaziling = () => {
   const config = {
-    apiKey: "AIzaSyCiLDBi-b0s3qQ7StQwIpepNwyEX65LHyo",
-    authDomain: "affamato-project.firebaseapp.com",
-    databaseURL: "https://affamato-project.firebaseio.com",
-    projectId: "affamato-project",
-    storageBucket: "affamato-project.appspot.com",
-    messagingSenderId: "371498322149"
+    apiKey: "AIzaSyBtEPEuMvBuLOCfhq9gJNVWgNdSFg9j4Gk",
+    authDomain: "pruebasfirebase-4521c.firebaseapp.com",
+    databaseURL: "https://pruebasfirebase-4521c.firebaseio.com",
+    projectId: "pruebasfirebase-4521c",
+    storageBucket: "pruebasfirebase-4521c.appspot.com",
+    messagingSenderId: "696990683166"
   };
 	// Inicializa la app web con las credenciales del proyecto "diabetipsoficials"
   firebase.initializeApp(config);
