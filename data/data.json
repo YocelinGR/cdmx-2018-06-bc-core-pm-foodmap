@@ -1,0 +1,98 @@
+{
+    "0": {
+        "name": "The Red Duck",
+        "img": "https://lh4.googleusercontent.com/proxy/ylAN-zwVF8hi2ieEEu5xXKlqasH811htFqlO3RLuMDzpDriP95wkOVim0DMWxIeIwjvcwDNduqOrDPBrSFV3d86dskdnw5jFo45cYTeQWsk_goU6t9X8QgtmVXo3ljgV-99o1gzXxAxYAcAnYSsma0mtjsPBQg=w408-h408-k-no",
+        "address": "Paseo de la Reforma 2620, Lomas Altas, 11950 Ciudad de México, CDMX",
+        "category": "China",
+        "lowPrice": "$400",
+        "hightPrice": "$600",
+        "map": "../src/images/theRedDuck.png",
+        "linkMap": "https://www.google.com.mx/maps/place/The+Red+Duck+Chinese+Cuisine/@19.3934974,-99.2391398,15z/data=!4m5!3m4!1s0x0:0xb2239ef97cde2108!8m2!3d19.3934974!4d-99.2391398",
+        "phone": "5525918963",
+        "rate": "Excelente",
+        "coordinates": {
+            "lng": 19.394206,
+            "lat": -99.237767
+        }
+    },
+    "1": {
+      "name": "Sanborn´s Casa de los Azulejos",
+      "img": "http://www.defe.mx/_/rsrc/1368776342728/mexico-df/restaurantes/sanborns-azulejos/Sanborn%27s%20Casa%20de%20los%20Azulejos.JPG?height=238&width=320",
+      "address": "Av Francisco I. Madero 4, Centro, 06500 Ciudad de México, CDMX, Mexico",
+      "category": "Mexicana",
+      "lowPrice": "$100",
+      "hightPrice": "$200",
+      "map": "../src/images/sanborns.png",
+      "linkMap": "https://www.google.com/maps/place/The+House+of+Tiles/@19.434329,-99.140163,14z/data=!4m5!3m4!1s0x0:0x8b1879ee6f42c37!8m2!3d19.4343286!4d-99.140163?hl=en",
+      "phone": "55121331",
+      "rate": "Aceptable",
+      "coordinates": {
+          "lng": 19.437283,
+          "lat": -99.136901
+      }
+    },
+    "2": {
+      "name": "Mora Blanca",
+      "img": "https://img.chilango.com/2017/02/morablanca.jpg",
+      "address": "Emilio Castelar 135 Col. Polanco Reforma ",
+      "category": "Francesa",
+      "lowPrice": "$400",
+      "hightPrice": "$600",
+      "map": "../src/images/morablanca.png",
+      "linkMap": "https://www.google.com/maps/place/Morablanca/@19.430351,-99.198308,16z/data=!4m5!3m4!1s0x0:0x84f45ef2a8eee9dd!8m2!3d19.430351!4d-99.198308?hl=es-419",
+      "phone": "52804358",
+      "rate": "Aceptable",
+      "coordinates": {
+          "lng": 19.430968,
+          "lat": -99.197729
+      }
+    },
+    "3": {
+      "name": "Alfredo di Roma",
+      "img": "https://lh5.googleusercontent.com/p/AF1QipNsGuy7InliBWAGImFDJEoAf17guUPZT5d6R8xe=w408-h306-k-no",
+      "address": "Campos Elíseos 218, Polanco, Polanco IV Secc, 11560 Miguel Hidalgo, CDMX, Mexico",
+      "category": "Italiano",
+      "lowPrice": "$400",
+      "hightPrice": "$600",
+      "map": "../src/images/alfredoDiRoma.png",
+      "linkMap": "https://www.google.com/maps/place/19%C2%B025'40.6%22N+99%C2%B011'27.3%22W/@19.427956,-99.1931177,17z/data=!3m1!4b1!4m13!1m6!3m5!1s0x0:0xf989320be818d900!2sAlfredo+Di+Roma!8m2!3d19.4273721!4d-99.1935878!3m5!1s0x0:0x0!7e2!8m2!3d19.4279514!4d-99.1909289?hl=en",
+      "phone": "53277776 ",
+      "rate": "Bueno",
+      "coordinates": {
+          "lng": 19.427951,
+          "lat": -99.190929
+      }
+    },
+    "4": {
+      "name": "Ivoire",
+      "img": "https://lh5.googleusercontent.com/p/AF1QipMjgRkn2VJrZLjktwpvGC-lEwffn5ug0Id3cvIw=w408-h272-k-no",
+      "address": "Av. Emilio Castelar 95, Polanco, Polanco IV Secc, 11560 Ciudad de México, CDMX",
+      "category": "Francesa",
+      "lowPrice": "$400",
+      "hightPrice": "$600",
+      "map": "../src/images/ivoire.png",
+      "linkMap": "https://www.google.com.mx/maps/place/Ivoire/@19.429977,-99.1963303,15z/data=!4m5!3m4!1s0x0:0xea36ace3477466f6!8m2!3d19.429977!4d-99.1963303",
+      "phone": "	52800477",
+      "rate": "Bueno",
+      "coordinates": {
+          "lng": 19.430928,
+          "lat": -99.195558
+      }
+    },
+    "5": {
+      "name": "Los Arcos",
+      "img": "https://lh5.googleusercontent.com/p/AF1QipPi7YgFo3UERs7mNt-pp-vi_zapAaY_10y3v-81=w408-h306-k-no",
+      "address": "Av. San Jerónimo 215, La Otra Banda, 01090 Delegación Álvaro Obregón, CDMX",
+      "category": "Pescados y Mariscos",
+      "lowPrice": "$200",
+      "hightPrice": "$400",
+      "map": "../src/images/losarcos.png",
+      "linkMap": "https://www.google.com.mx/maps/place/Los+Arcos/@19.3360811,-99.1966859,15z/data=!4m5!3m4!1s0x0:0xd6e2816aaa07ebee!8m2!3d19.3360811!4d-99.1966859",
+      "phone": "56166313",
+      "rate": "Excelente",
+      "coordinates": {
+          "lng": 19.337114,
+          "lat": -99.195699
+      }
+    }
+}

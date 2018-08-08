@@ -1,6 +1,6 @@
 {
-  "name": "food-map",
-  "version": "1.0.0",
+  "name": "foodmap",
+  "version": "0.1.0",
   "main": "src/index.html",
   "license": "MIT",
   "scripts": {
@@ -28,5 +28,21 @@
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-react": "^7.10.0"
-  }
+  },
+  "description": "Crea una web-app que a través de un input pueda filtrar los restaurantes\r que se encuentran cerca de ti *(Tú decides la estructura que tendrán tus datos,\r puedes crear una lista de restaurantes en un arreglo, en un objeto, consumir una API, etc. Lo importante es que el contenido debe ser dinámico y no estático y el diseño es totalmente libre)*.",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YocelinGR/cdmx-2018-06-bc-core-pm-foodmap.git"
+  },
+  "keywords": [
+    "map"
+  ],
+  "author": "YocelinGR",
+  "bugs": {
+    "url": "https://github.com/YocelinGR/cdmx-2018-06-bc-core-pm-foodmap/issues"
+  },
+  "homepage": "https://github.com/YocelinGR/cdmx-2018-06-bc-core-pm-foodmap#readme"
 }
